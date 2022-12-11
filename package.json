@@ -1,0 +1,22 @@
+{
+  "name": "download-manager",
+  "version": "1.0.0",
+  "description": "Electron.JS download manager",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ventisk1ze/download-manager.git"
+  },
+  "author": "George Pinchuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ventisk1ze/download-manager/issues"
+  },
+  "homepage": "https://github.com/ventisk1ze/download-manager#readme",
+  "dependencies": {
+    "electron": "^22.0.0"
+  }
+}
