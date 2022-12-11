@@ -13,7 +13,7 @@ const createWindow = () => {
 
     win.loadFile('index.html')
 
-    win.webContents.openDevTools()
+    //win.webContents.openDevTools()
 }
 
 app.whenReady().then(() => {
@@ -29,8 +29,3 @@ app.whenReady().then(() => {
 app.on('window-all-closed', () => {
     if (process.platform !== 'darwin') app.quit()
 })
-
-function test(){
-    element = document.getElementById('test')
-    element.innerText='Things have changed'
-}

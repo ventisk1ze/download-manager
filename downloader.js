@@ -1,6 +1,10 @@
-document.getElementById("btn").addEventListener("click", test);
+document.getElementById("btn").addEventListener("click", download);
 
-function test(){
-    element = document.getElementById('test')
-    element.innerText='Things have changed'
+function download(){
+    element = document.getElementById("urlfld")
+    downloaderElement = document.createElement("a")
+    downloaderElement.setAttribute("href", element.value)
+    downloaderElement.setAttribute("download", "")
+    downloaderElement.click()
+    downloaderElement.remove()
 }
