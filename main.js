@@ -9,8 +9,11 @@ const createWindow = () => {
         preload: path.join(__dirname, 'preload.js')
       }
     })
-  
-    win.loadFile('static/index.html')
+    win.setMenu(null)
+
+    win.loadFile('index.html')
+
+    win.webContents.openDevTools()
 }
 
 app.whenReady().then(() => {
@@ -26,3 +29,8 @@ app.whenReady().then(() => {
 app.on('window-all-closed', () => {
     if (process.platform !== 'darwin') app.quit()
 })
+
+function test(){
+    element = document.getElementById('test')
+    element.innerText='Things have changed'
+}
